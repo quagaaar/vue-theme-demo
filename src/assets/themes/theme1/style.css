@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+
+nav ul > li:not(:last-child)::after {
+    content: ' | ';
+}
+
+input[type=range] {
+    display: block;
+}

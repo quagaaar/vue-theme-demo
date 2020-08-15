@@ -1,24 +1,9 @@
-# vue-theme-demo
+# VUE Theme Demo
 
-## Project setup
-```
-npm install
-```
+Switch between component sets and stylesheet themes at runtime using dynamic components and dynamic imports.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Keywords:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* [Dynamic Components](https://vuejs.org/v2/guide/components.html#Dynamic-Components "Vue.js Documentation")
+* [Dynamic Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import "MDN")
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

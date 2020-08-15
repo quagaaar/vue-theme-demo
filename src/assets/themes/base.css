@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkviolet;
+}
+
+nav, nav a {
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul > li {
+    display: inline;
+}
+
+nav > div {
+    display: table;
+}
+
+nav > div > label {
+    margin: 0 20px;
+}
+
+main nav {
+    background-color: indigo;
+}

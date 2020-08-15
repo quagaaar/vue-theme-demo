@@ -1,0 +1,19 @@
+body {
+    font-family: serif;
+    color: blue;
+}
+
+nav ul > li:not(:last-child)::after {
+    content: ' // ';
+    color: deeppink;
+    font-weight: bold;
+}
+
+input[type=range] {
+    display: block;
+}
+
+h2 {
+    font-style: italic;
+    text-shadow: 5px 5px 5px deeppink;
+}
