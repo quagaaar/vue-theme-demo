@@ -7,7 +7,7 @@
             <button type="button" @click="turnDown">-</button>
             <button type="button" @click="mute">Mute</button>
         </label>
-        <p>Current volume: {{ volume }}</p>
+        <p v-if="showCurrentVolume">Current volume: {{ volume }}</p>
     </div>
 </template>
 
@@ -15,8 +15,15 @@
 export default {
     data() {
         return {
-            volume: 0
+            volume: 0,
+            showCurrentVolume: true
         }
+    },
+    created() {
+        import(`@/components/themes/${this.$store.state.theme}/config.js`)
+            .then(config => config.default)
+            .then(config => this.showCurrentVolume = config.show_current_volume)
+            .catch(e => console.error(e))
     },
     methods: {
         turnUp() {
